@@ -1,0 +1,33 @@
+name: my_flutter_project # プロジェクト名
+description: A new Flutter project. # プロジェクトの説明
+
+# Flutter SDKのバージョンを指定
+environment:
+  sdk: ">=3.0.0 <4.0.0" # Dart SDKのバージョン範囲
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # その他の依存関係（必要に応じて追加）
+  cupertino_icons: ^1.0.2 # iOS風アイコンパッケージ
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true # Material Designを使用する場合はtrueに設定
+
+  # アセット（画像やフォント）を使用する場合
+  assets:
+    - assets/images/ # アセットフォルダを指定（例: imagesフォルダ内）
+    - assets/icons/
+
+  # フォントをカスタマイズする場合（任意）
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
